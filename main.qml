@@ -43,4 +43,17 @@ ApplicationWindow {
         y: 283
         value: 0
     }
+
+    TextInput {
+        id: textInput
+        x: 280
+        y: 194
+        width: 80
+        height: 20
+        text: qsTr("5000")
+        horizontalAlignment: Text.AlignHCenter
+        font.pixelSize: 12
+
+        onTextChanged: iface.set_time(text)
+    }
 }
