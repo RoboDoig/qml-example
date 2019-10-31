@@ -4,7 +4,7 @@ import QtQuick.Controls 2.13
 
 Rectangle {
     id: rectangle
-    objectName: "obj"
+    objectName: "dragBox"
     width: 100
     height: 100
     color: "#fdfdfd"

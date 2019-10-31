@@ -18,7 +18,7 @@ if __name__ == '__main__':
     win = appEngine.rootObjects()[0]
 
     # Register Python classes with qml
-    interface = Interface(app, context, win)
+    interface = Interface(app, context, win, appEngine)
 
     context.setContextProperty('iface', interface)
 

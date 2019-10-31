@@ -5,15 +5,24 @@ import QtQuick.Controls 2.13
 import QtQuick.Shapes 1.11
 
 ApplicationWindow {
+    id: root
     visible: true
+    objectName: "applicationWindow"
     width: 640
     height: 480
     title: qsTr("drag-drop")
 
-    CustomDragBox {
-        id: customDragBox
-        x: 270
-        y: 190
+    Button {
+        id: button
+        objectName: "button"
+        x: 0
+        y: 0
+        text: qsTr("Create New")
+        //onClicked: iface.create_new()
+        //onClicked: Qt.createComponent("CustomDragBox.qml").createObject(root)
+        onClicked: {
+            iface.create_new(Qt.createComponent("CustomDragBox.qml").createObject(root))
+        }
     }
 }
 
