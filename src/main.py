@@ -2,9 +2,9 @@ import sys
 
 from PyQt5.QtQml import QQmlApplicationEngine
 from PyQt5.QtWidgets import QApplication
-from PyQt5.QtCore import QObject, QUrl
+from PyQt5.QtCore import QUrl
 
-from interface import Interface
+from src.interface import Interface
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     context = appEngine.rootContext()
 
-    appEngine.load(QUrl('main.qml'))
+    appEngine.load(QUrl('./main.qml'))
 
     win = appEngine.rootObjects()[0]
 

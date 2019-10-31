@@ -2,6 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>drag-drop.qml</file>
-        <file>DragBox.qml</file>
+        <file>CustomDragBox.qml</file>
     </qresource>
 </RCC>

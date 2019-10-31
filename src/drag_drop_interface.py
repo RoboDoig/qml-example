@@ -7,3 +7,7 @@ class Interface(QObject):
         self.app = app
         self.ctx = context
         self.win = parent
+
+    @pyqtSlot(QVariant)
+    def on_released(self, obj):
+        print(obj.property('x'), obj.property('y'))
