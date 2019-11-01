@@ -18,8 +18,6 @@ ApplicationWindow {
         x: 0
         y: 0
         text: qsTr("Create New")
-        //onClicked: iface.create_new()
-        //onClicked: Qt.createComponent("CustomDragBox.qml").createObject(root)
         onClicked: {
             iface.create_new(Qt.createComponent("CustomDragBox.qml").createObject(root))
         }

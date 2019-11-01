@@ -18,6 +18,8 @@ class Interface(QObject):
     @pyqtSlot(QQuickItem)
     def create_new(self, obj):
         print('new created', obj)
+
+        # Was trying to do within function, couldn't figure out. Instead object gets passed from QML side.
         # new_component = QQmlComponent(self.engine)
         # new_component.loadUrl(QUrl('../CustomDragBox.qml'))
         # itm = new_component.create()
